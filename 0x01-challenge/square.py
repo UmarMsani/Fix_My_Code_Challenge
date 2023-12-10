@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 
+class Square():
+    """
+    starting the class representing a square shape.
 
-class Square:
-    """ starting the class """
+    Attributes:
+    - width: The width of the square.
+    - height: The height of the square.
+    """
 
     def __init__(self, width, height):
         """
@@ -22,7 +27,7 @@ class Square:
         Returns:
         The perimeter of the square
         """
-        return self.width * self.height  # Area = width * height
+        return self.width * self.height
 
     def perimeter_of_my_square(self):
         """
@@ -44,7 +49,7 @@ class Square:
 
 
 if __name__ == "__main__":
-    # Create a Square object with width=12 and height=9
+
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
